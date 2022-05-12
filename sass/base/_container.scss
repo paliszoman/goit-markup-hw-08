@@ -1,0 +1,44 @@
+.container {
+    width: 100%;
+    padding: 0px 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .container{
+        min-width: 480px;
+    }
+    .section {
+        padding: 60px 0px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        min-width: 768px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        min-width: 1200px;
+        padding: 0px 215px;
+    }
+    .section {
+    padding: 94px 0px;
+}
+}
+ 
+/*.container {
+    width: 1200px;
+    padding: 0px 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.section {
+    padding: 94px 0px;
+}
+*/

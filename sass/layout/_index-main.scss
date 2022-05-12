@@ -1,0 +1,130 @@
+.main__background {
+    background-image: linear-gradient(var(--gradient),
+            var(--gradient)),
+        url(../images/main/main-mob.jpg);
+    background-size: cover;
+
+}
+
+.main-site {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__headline {
+        width: 365px;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.61;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--transparent-fill);
+        padding-top: 106px;
+        padding-bottom: 30px;
+
+    }
+
+    &__btn {
+        padding-bottom: 106px;
+
+    }
+}
+
+.main-description,
+.about-us__list,
+.main-crew {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+
+
+.main-headline {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
+    padding-bottom: 30px;
+}
+
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px),
+screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767px) {
+    .main__background {
+            background-image: linear-gradient(var(--gradient),
+                    var(--gradient)),
+                url(../images/main/main-mob@2x.jpg);
+            background-size: cover;
+    
+        }
+}
+
+
+
+
+
+
+/*
+.main__background {
+    background-image: linear-gradient(var(--gradient),
+            var(--gradient)),
+        url(../images/main.jpg);
+    background-size: cover;
+
+}
+
+.main-site {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__headline {
+            font-weight: 900;
+            font-size: 44px;
+            width: 695px;
+            line-height: 1.4;
+            text-align: center;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--transparent-fill);
+            padding-top: 106px;
+            padding-bottom: 30px;
+    
+        }
+    
+    &__btn {
+            padding-bottom: 106px;
+    
+        }
+}
+
+.main-description,
+.about-us__list,
+.main-crew {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+
+
+.main-headline {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.43;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
+    padding-bottom: 50px;
+}
+*/

@@ -1,0 +1,283 @@
+
+
+.header{
+    padding: 0 15px;
+    &__div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 0;
+    }
+
+    &__menu{
+        display: block;
+        width: 40px;
+        height: 40px;
+     
+    }
+
+    &--border {
+            border-bottom: 1px solid var(--header-border);
+        }
+        &__mail,
+        &__tel,
+        &__contact{
+        display: none;
+    }
+  .nav-header {
+      display: none;
+  }
+  .menu--hover {
+      text-decoration: none;
+      color: var(--secondary-color);
+      transition-property: color, fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-delay: 0;
+      cursor: pointer;
+
+      &:hover,
+      &:focus {
+          color: var(--main-color);
+          transform: color;
+          fill: var(--main-color);
+      }
+}
+}
+
+
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .header {
+            &__div {
+                padding: 26px 0;
+            justify-content: start;
+            }
+    
+            &__menu {
+                display: none;
+    
+            }
+
+            &__logo-div{
+                margin-right: 83px;
+            }
+
+            &__mail{
+                margin-bottom: 10px;
+            }
+            &__mail,
+            &__tel {
+                display: unset;
+                font-size: 12px;
+                line-height: 1;
+                letter-spacing: 0.02em;
+                margin: 0 auto;
+                }
+
+            &__mail-svg{
+                width: 14px;
+                height: 10px;
+                margin-right: 8px;
+            }
+            &__tel-svg{
+                width: 10px;
+                height: 14px;
+                margin-right: 8px;
+            }
+            &__contact {
+                display: flex;
+                flex-direction: column;
+                color: var(--background-color);  
+                margin-left: 101px;
+             
+                     
+              }
+        .nav-header {
+            display: unset;
+           
+    
+            &__list {
+                display: flex;
+                align-items: center;
+                justify-content: start;
+            }
+    
+            &__list-point:not(:last-child) {
+                margin-right: 60px;
+            }
+        }
+
+        .link--hover {
+            text-decoration: none;
+            color: var(--secondary-color);
+            transition-property: color, fill;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-delay: 0;
+    
+            &:hover,
+            &:focus {
+                color: var(--main-color);
+                transform: color;
+                fill: var(--main-color);
+            }
+        }
+
+
+        .active {
+            &::after {
+                content: "";
+                display: block;
+                border-bottom: 4px solid var(--main-color);
+                border-radius: 2px;
+                transform: translateY(39px);
+    
+            }
+    
+            &--choose::after {
+                content: "";
+                display: block;
+                border-bottom: 4px solid transparent;
+                border-radius: 2px;
+                transform: scaleX(0) translateY(39px);
+                transform-origin: right;
+                transition: transform 150ms ease-in;
+            }
+    
+            &--choose:hover::after,
+            &--choose:focus::after {
+                content: "";
+                display: block;
+                border-bottom: 4px solid var(--main-color);
+                border-radius: 2px;
+                transform: scaleX(1) translateY(39px);
+                transform-origin: left;
+            }
+    
+        }
+            }
+    
+        }
+    
+        
+
+
+
+
+@media screen and (min-width: 1200px) {
+
+.header {
+   display: flex;
+   justify-content: center;
+    &__div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 32px 0;
+        }
+        &__menu {
+            display: none;
+    
+        }
+        &__contact{
+            display: flex;
+            margin-right: auto;
+            margin-left: 200px;
+        }
+    
+        &__mail,
+        &__tel {
+            display: unset;
+        }
+    
+        &__mail-svg {
+            width: 16px;
+            height: 12px;
+        }
+    
+        &__tel-svg {
+            width: 10px;
+            height: 16px;
+        }
+   
+    
+        &__logo-div {
+            margin-right: 93px;
+    
+        }
+        &__mail {
+            margin-left: auto;
+            margin-right: 50px;
+        }
+    
+        .nav-header {
+            display: unset;
+        &__list {
+            display: flex;
+            align-items: center;
+                    }
+        
+        &__list-point:not(:last-child) {
+            margin-right: 46px;
+                    }
+        
+                }
+        
+    .link--hover {
+        text-decoration: none;
+        color: var(--secondary-color);
+        transition-property: color, fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-delay: 0;
+        
+    &:hover,
+    &:focus {
+        color: var(--main-color);
+        transform: color;
+        fill: var(--main-color);
+                    }
+                }
+        
+        
+        
+                .active {
+                    &::after {
+                        content: "";
+                        display: block;
+                        border-bottom: 4px solid var(--main-color);
+                        border-radius: 2px;
+                        transform: translateY(35px);
+        
+                    }
+        
+                    &--choose::after {
+                        content: "";
+                        display: block;
+                        border-bottom: 4px solid transparent;
+                        border-radius: 2px;
+                        transform: scaleX(0) translateY(35px);
+                        transform-origin: right;
+                        transition: transform 150ms ease-in;
+                    }
+        
+                    &--choose:hover::after,
+                    &--choose:focus::after {
+                        content: "";
+                        display: block;
+                        border-bottom: 4px solid var(--main-color);
+                        border-radius: 2px;
+                        transform: scaleX(1) translateY(35px);
+                        transform-origin: left;
+                    }
+        
+                }
+}
+
+
+}

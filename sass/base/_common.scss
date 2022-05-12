@@ -1,0 +1,29 @@
+body {
+    font-family: var(--body-font);
+    font-style: normal;
+    color: var(--background-color);
+    max-width: 1600;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+p {
+    margin: 0;
+    padding: 0;
+}
+ img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+ }
+
+ .list {
+     list-style: none;
+ }

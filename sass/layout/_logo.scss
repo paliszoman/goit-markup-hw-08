@@ -1,0 +1,38 @@
+.logo {
+    text-decoration: none;
+
+    &--blue,
+    &--black,
+    &--white {
+            font-family: var(--logo-font);
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 1.1;
+            letter-spacing: 0.03em;
+        }
+}
+
+.logo--blue {
+    color: var(--main-color);
+}
+
+.logo--black {
+    color: var(--secondary-color);
+}
+
+.logo--white {
+    color: var(--transparent-fill);
+}
+
+
+ @media screen and (min-width: 1200px)  {
+.logo {
+        text-decoration: none;
+
+        &--blue,
+        &--black,
+        &--white {
+
+          
+            font-size: 26px;
+ }}}

@@ -3,7 +3,7 @@
             var(--gradient)),
         url(../images/main/main-mob.jpg);
     background-size: cover;
-
+    
 }
 
 .main-site {
@@ -13,7 +13,7 @@
     flex-direction: column;
 
     &__headline {
-        width: 365px;
+        width: 100%;
         font-weight: 900;
         font-size: 26px;
         line-height: 1.61;

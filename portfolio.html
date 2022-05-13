@@ -26,7 +26,7 @@
             <span class="logo--blue">Web</span><span class="logo--black">Studio</span></a
           >
         </div>
-        <svg alt="mobile menu" class="header__menu menu--hover">
+        <svg alt="mobile menu" class="header__menu menu--hover" data-menu-open>
           <use href="./images/icons.svg#icon-menu"></use>
         </svg>
         <nav class="nav-header">
@@ -84,7 +84,7 @@
           </li>
         </ul>
 
-        <ul class="product list">
+        <ul class="product list container">
           <li class="product__list">
             <figure class="product__fig">
               <ul class="product__fig-list list">
@@ -330,7 +330,7 @@
     <footer class="footer">
       <div class="container">
         <ul class="list footer__flex">
-          <li>
+          <li class="footer__flex-item">
             <a href="index.html" class="logo"
               ><span class="logo--blue">Web</span><span class="logo--white">Studio</span></a
             >
@@ -361,7 +361,7 @@
               </ul>
             </address>
           </li>
-          <li>
+          <li class="footer__flex-item">
             <div class="footer__social-media">
               <h3 class="footer--headers">Dołącz do nas</h3>
               <ul class="footer-social list">
@@ -419,5 +419,36 @@
         </ul>
       </div>
     </footer>
+
+    <div class="backdrop-menu is-hidden" data-menu>
+      <svg type="button" class="mobile-close-btn" data-menu-close >
+        <use href="./images/icons.svg#icon-x"></use></button></svg>
+
+        <nav class="mobile-menu">
+            <ul class="mobile-menu__list list">
+              <li class="mobile-menu__list-point">
+                <a href="index.html" class="mobile-menu__link link link--hover">Agencja</a>
+              </li>
+              <li class="mobile-menu__list-point">
+                <a href="portfolio.html" class="mobile-menu__link link link--hover">Portfolio</a>
+              </li>
+              <li class="mobile-menu__list-point"><a href="#kontakt" class="mobile-menu__link link link--hover">Kontakt</a></li>
+            </ul>
+          </nav>
+          <ul class="mobile-menu__contact list">
+            
+          <li class="mobile-menu__contact-list"><a href="tel:+48111111111" class="link mobile-menu__tel">
+            +48 111 111 111</a></li>
+          <li class="mobile-menu__contact-list"><a href="mailto:info@devstudio.com" class="link mobile-menu__mail">
+            info@devstudio.com</a></li></ul>
+          <ul class="mobile-menu__social list">
+            <li class="mobile-menu__social-list"><a href="#" class="mobile-menu__social-link link">Instagram</a></li>
+            <li class="mobile-menu__social-list"><a href="#" class="mobile-menu__social-link link">Twitter</a></li>
+            <li class="mobile-menu__social-list"><a href="#" class="mobile-menu__social-link link">Facebook</a></li>
+            <li class="mobile-menu__social-list"><a href="#" class="mobile-menu__social-link link">Linkedin</a></li>
+          </ul>
+    </div>
+    <script src="./js/menu.js"></script>
+
   </body>
 </html>

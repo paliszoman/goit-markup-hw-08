@@ -62,6 +62,32 @@
     border-radius: 50%;
     cursor: pointer;
     background-color: var(--transparent-fill);
+    transition: fill;
+
+    &:hover,
+    &:focus {
+            fill: var(--main-color);
+            transform: fill;
+        }
+}
+
+.mobile-close-btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    fill: var(--secondary-color);
+    background-color: var(--transparent-fill);
+    transition: fill;
+
+    &:hover,
+    &:focus { 
+            fill: var(--main-color);
+            transform: fill;
+        }
 }
 
 

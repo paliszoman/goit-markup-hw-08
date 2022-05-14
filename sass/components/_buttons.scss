@@ -93,11 +93,23 @@
 
 .portfolio__buttons {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+    flex-wrap: wrap;
     padding-bottom: 34px;
+    margin-right: -8px;
+    
+    &-list{
+        flex-basis: calc(95%/3 -30px);
+        margin-bottom: 15px;
+        margin-right: 8px;
+    }
 
-    &-list:not(:last-child) {
-            margin-right: 8px;
-        }
+    
+}
+
+@media screen and (min-width: 768px) {
+    .portfolio__buttons {
+        justify-content: center;
+    }
 }

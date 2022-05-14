@@ -76,7 +76,7 @@
 
       <ul class="list main-description container">
         <li class="main-description__list">
-          <div class="main-description__pic" width="270" height="120">
+          <div class="main-description__pic">
             <svg alt="radar" class="main-description__svg" width="70" height="70">
               <use href="./images/icons.svg#icon-antenna"></use>
             </svg>
@@ -88,7 +88,7 @@
           </p>
         </li>
         <li class="main-description__list">
-          <div class="main-description__pic" width="270" height="120">
+          <div class="main-description__pic">
             <svg alt="radar" class="main-description__svg" width="70" height="70">
               <use href="./images/icons.svg#icon-clock"></use>
             </svg>
@@ -100,7 +100,7 @@
           </p>
         </li>
         <li class="main-description__list">
-          <div class="main-description__pic" width="270" height="120">
+          <div class="main-description__pic">
             <svg alt="radar" class="main-description__svg" width="70" height="70">
               <use href="./images/icons.svg#icon-diagram"></use>
             </svg>
@@ -112,7 +112,7 @@
           </p>
         </li>
         <li class="main-description__list">
-          <div class="main-description__pic" width="270" height="120">
+          <div class="main-description__pic">
             <svg alt="radar" class="main-description__svg" width="70" height="70">
               <use href="./images/icons.svg#icon-astronaut"></use>
             </svg>
@@ -130,18 +130,42 @@
 
         <ul class="about-us__list list">
           <li class="about-us__list-point">
-            <img class="about-us__image" src="images/job/box1.jpg" alt="komputer" width="370" height="294" />
-            <span class="about-us__text" width="370" height="70px">Aplikacje komputerowe</span>
+            <picture>
+                      <source srcset="./images/job/box1-mob.jpeg 1x, ./images/job/box1-mob@2x.jpeg 2x" media="(min-width: 320px) and (max-width: 768px)" />
+                      <source srcset="./images/job/box1-tab.jpeg 1x, ./images/job/box1-tab@2x.jpeg 2x" media="(min-width: 768px) and (max-width: 1200px)" />
+                      <source srcset="./images/job/box1.jpeg 1x, ./images/job/box1@2x.jpeg 2x" media="(min-width: 1200px)" />
+                    <img
+                      src="images/job/box1-mob.jpeg"
+                      alt="komputer"
+                      class="about-us__image"
+                    /></picture>
+            <span class="about-us__text" ">Aplikacje komputerowe</span>
           </li>
 
           <li class="about-us__list-point">
-            <img class="about-us__image" src="images/job/box2.jpg" alt="laptop" width="370" height="294" />
-            <span class="about-us__text" width="370" height="70px">Aplikacje mobilne</span>
+            <picture>
+                      <source srcset="./images/job/box2-mob.jpeg 1x, ./images/job/box2-mob@2x.jpeg 2x" media="(min-width: 320px) and (max-width: 768px)" />
+                      <source srcset="./images/job/box2-tab.jpeg 1x, ./images/job/box2-tab@2x.jpeg 2x" media="(min-width: 768px) and (max-width: 1200px)" />
+                      <source srcset="./images/job/box2.jpeg 1x, ./images/job/box2@2x.jpeg 2x" media="(min-width: 1200px)" />
+                    <img
+                      src="images/job/box2-mob.jpeg"
+                      alt="laptop"
+                      class="about-us__image"
+                    /></picture>
+            <span class="about-us__text" ">Aplikacje mobilne</span>
           </li>
 
           <li class="about-us__list-point">
-            <img class="about-us__image" src="images/job/box3.jpg" alt="tablet" width="370" height="294" />
-            <span class="about-us__text" width="370" height="70px">Rozwiązania graficzne</span>
+            <picture>
+                      <source srcset="./images/job/box3-mob.jpeg 1x, ./images/job/box3-mob@2x.jpeg 2x" media="(min-width: 320px) and (max-width: 768px)" />
+                      <source srcset="./images/job/box3-tab.jpeg 1x, ./images/job/box3-tab@2x.jpeg 2x" media="(min-width: 768px) and (max-width: 1200px)" />
+                      <source srcset="./images/job/box3.jpeg 1x, ./images/job/box3@2x.jpeg 2x" media="(min-width: 1200px)" />
+                    <img
+                      src="images/job/box3-mob.jpeg"
+                      alt="tablet"
+                      class="about-us__image"
+                    /></picture>
+            <span class="about-us__text" ">Rozwiązania graficzne</span>
           </li>
         </ul>
       </section>
@@ -151,7 +175,15 @@
           <ul class="crew__list list">
             <li class="crew__list-point">
               <figure class="crew__fig">
-                <img src="images/crew/crew-mob-1.jpg" alt="John Doe" class="crew-fig__image" />
+                <picture>
+                      <source srcset="./images/crew/crew-mob-1.jpeg 1x, ./images/crew/crew-mob-1@2x.jpeg 2x" media="(min-width: 320px) and (max-width: 768px)" />
+                      <source srcset="./images/crew/crew-tab-1.jpeg 1x, ./images/crew/crew-tab-1@2x.jpeg 2x" media="(min-width: 768px) and (max-width: 1200px)" />
+                      <source srcset="./images/crew/crew-1.jpeg 1x, ./images/crew/crew-1@2x.-1jpeg 2x" media="(min-width: 1200px)" />
+                    <img
+                      src="images/crew/crew-mob-1.jpeg"
+                      alt="John Doe1"
+                      class="crew-fig__image"
+                    /></picture>
                 <figcaption>
                   <ul class="crew-fig__list list">
                     <li class="crew-fig__list-name">John Doe</li>
@@ -193,7 +225,15 @@
 
              <li class="crew__list-point">
               <figure class="crew__fig">
-                <img src="images/crew/crew-mob-2.jpg" alt="John Doe2" class="crew-fig__image" />
+                <picture>
+                      <source srcset="./images/crew/crew-mob-2.jpeg 1x, ./images/crew/crew-mob-2@2x.jpeg 2x" media="(min-width: 320px) and (max-width: 768px)" />
+                      <source srcset="./images/crew/crew-tab-2.jpeg 1x, ./images/crew/crew-tab-2@2x.jpeg 2x" media="(min-width: 768px) and (max-width: 1200px)" />
+                      <source srcset="./images/crew/crew-2.jpeg 1x, ./images/crew/crew-2@2x.2jpeg 2x" media="(min-width: 1200px)" />
+                    <img
+                      src="images/crew/crew-mob-2.jpeg"
+                      alt="John Doe2"
+                      class="crew-fig__image"
+                    /></picture>
                 <figcaption>
                   <ul class="crew-fig__list list">
                     <li class="crew-fig__list-name">John Doe</li>
@@ -234,7 +274,15 @@
             </li>
              <li class="crew__list-point">
               <figure class="crew__fig">
-                <img src="images/crew/crew-mob-3.jpg" alt="John Doe3" class="crew-fig__image" />
+                <picture>
+                      <source srcset="./images/crew/crew-mob-3.jpeg 1x, ./images/crew/crew-mob-3@2x.jpeg 2x" media="(min-width: 320px) and (max-width: 768px)" />
+                      <source srcset="./images/crew/crew-tab-3.jpeg 1x, ./images/crew/crew-tab-3@2x.jpeg 2x" media="(min-width: 768px) and (max-width: 1200px)" />
+                      <source srcset="./images/crew/crew-3.jpeg 1x, ./images/crew/crew-3@2x.jpeg 2x" media="(min-width: 1200px)" />
+                    <img
+                      src="images/crew/crew-mob-3.jpeg"
+                      alt="John Doe3"
+                      class="crew-fig__image"
+                    /></picture>
                 <figcaption>
                   <ul class="crew-fig__list list">
                     <li class="crew-fig__list-name">John Doe</li>
@@ -276,7 +324,15 @@
 
              <li class="crew__list-point">
               <figure class="crew__fig">
-                <img src="images/crew/crew-mob-4.jpg" alt="John Doe4" class="crew-fig__image" />
+                <picture>
+                      <source srcset="./images/crew/crew-mob-4.jpeg 1x, ./images/crew/crew-mob-4@2x.jpeg 2x" media="(min-width: 320px) and (max-width: 768px)" />
+                      <source srcset="./images/crew/crew-tab-4.jpeg 1x, ./images/crew/crew-tab-4@2x.jpeg 2x" media="(min-width: 768px) and (max-width: 1200px)" />
+                      <source srcset="./images/crew/crew-4.jpeg 1x, ./images/crew/crew-4@2x.jpeg 2x" media="(min-width: 1200px)" />
+                    <img
+                      src="images/crew/crew-mob-4.jpeg"
+                      alt="John Doe4"
+                      class="crew-fig__image"
+                    /></picture>
                 <figcaption>
                   <ul class="crew-fig__list list">
                     <li class="crew-fig__list-name">John Doe</li>
@@ -483,7 +539,7 @@
                 <a href="index.html" class="mobile-menu__link link link--hover">Agencja</a>
               </li>
               <li class="mobile-menu__list-point">
-                <a href="portfolio.html" class="mobile-menu__link link link--hover">Portfolio</a>
+                <a href="job.html" class="mobile-menu__link link link--hover">job</a>
               </li>
               <li class="mobile-menu__list-point"><a href="#kontakt" class="mobile-menu__link link link--hover">Kontakt</a></li>
             </ul>

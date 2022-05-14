@@ -1,16 +1,19 @@
 .container {
     width: 100%;
-    padding: 0px 15px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-right: auto;
     margin-left: auto;
 }
 .section {
-    padding: 60px 0px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
     .container{
         max-width: 480px;
+       
     }
     
 }
@@ -24,10 +27,12 @@
 @media screen and (min-width: 1200px) {
     .container {
         max-width: 1200px;
-        padding: 0px 25px;
+        padding-left: 25px;
+        padding-right: 25px;
     }
     .section {
-    padding: 94px 0px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 }
 }

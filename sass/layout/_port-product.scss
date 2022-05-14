@@ -9,13 +9,13 @@
             font-weight: 700;
             font-size: 18px;
             line-height: 2;
-            /* identical to box height, or 200% */
             letter-spacing: 0.06em;
             color: var(--secondary-color);
         }
     
         &__list {
             flex-basis: 100%;
+            max-width: 354px;
             transition-property: box-shadow;
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

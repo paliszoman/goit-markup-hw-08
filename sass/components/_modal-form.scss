@@ -122,4 +122,10 @@
                 }
 }
 
-
+@media screen and (min-width: 1200px){
+.form{
+    &__policy-text{
+        font-size: 14px;
+    }
+}
+    }

@@ -35,11 +35,29 @@
         transform: fill, border;
     }
 }
+@media screen and (min-width: 480px) {
+    .clients__list {
+        max-width: 480px;
+    }
+}
 
+@media screen and (min-width: 768px) {
+    .clients__list {
+        max-width: 768px;
+        &-point {
+            flex-basis: calc(100% / 3 - 30px);
+            }
+    }
+}
 
-
-
-
+@media screen and (min-width: 1200px) {
+    .clients__list {
+        max-width: 1200px;
+        &-point {
+                flex-basis: calc(100% / 6 - 30px);
+            }
+    }
+}
 
 
 /*

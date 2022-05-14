@@ -6,6 +6,8 @@
  {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     flex-direction: column;
     
     &-point {
@@ -75,6 +77,57 @@
     }
 }
 
+@media screen and (min-width: 480px) {
+    .crew{
+        max-width:480px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .crew {
+        max-width: 768px;
+        &__fig{
+            margin-right: 30px;
+            margin-bottom: 30px;
+        }
+        }
+    .crew__list{
+    display: flex;
+    flex-direction: row;
+    margin-right: -30px;
+    margin-bottom: -30px;
+    &-point {
+        flex-basis: calc(95%/2);
+    }
+    &-point:not(:last-child){
+        margin-bottom: 0;
+    }
+}
+}
+
+@media screen and (min-width: 1200px) {
+     .crew{
+        max-width:1200px;
+
+    &__fig {
+        
+        background-color: var(--transparent-fill);
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+        &:hover,
+        &:focus {
+            transform: scale(105%);
+                }
+            }
+    }
+    .crew__list{
+    
+    &-point {
+        flex-basis: calc(95%/4);
+    }
+    
+}
+}
 
 
 

@@ -1214,6 +1214,39 @@ img {
   display: none;
 }
 
+@media screen and (min-width: 1200px) {
+  .about-us {
+    max-width: 1200px;
+    display: unset;
+  }
+  .about-us__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-us__list-point {
+    position: relative;
+  }
+  .about-us__list-point:not(:last-child) {
+    margin-right: 30px;
+  }
+  .about-us__text {
+    position: absolute;
+    background: rgba(47, 48, 58, 0.8);
+    color: var(--transparent-fill);
+    bottom: 0;
+    left: 0;
+    width: 370px;
+    height: 70px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    padding-top: 27px;
+  }
+}
+
 /*
 .about-us{
     &__list-point {

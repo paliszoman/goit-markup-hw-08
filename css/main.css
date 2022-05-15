@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .visually-hidden {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -908,6 +909,7 @@ img {
   }
   .footer-form__textbox {
     max-width: 358px;
+    margin-right: 12px;
   }
 }
 
@@ -1010,6 +1012,7 @@ img {
 .main__background {
   background-image: linear-gradient(var(--gradient), var(--gradient)), url(../images/main/hero-mob.jpeg);
   background-size: cover;
+  max-width: 1600pxłó;
 }
 
 .main-site {
@@ -1247,8 +1250,8 @@ img {
 
 @media screen and (min-width: 1200px) {
   .about-us {
-    max-width: 1200px;
     display: unset;
+    max-width: 1200px;
   }
   .about-us__list {
     display: flex;
